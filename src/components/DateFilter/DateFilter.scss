@@ -1,0 +1,20 @@
+.date_filter {
+    width: 40%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
+    input {
+        padding: 4px 7px;
+        border-radius: 7px;
+        margin: 0 4px;
+    }
+    .date_btn {
+        background-color: var(--blue);
+        border: none;
+        outline: none;
+        padding: 4px;
+        border-radius: 7px;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,51 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 0;
+    background-color: var(--gray);
+    color: #ffffff;
+    z-index: 10;
+    h4 {
+        width: 100%;
+        height: 44px;
+        padding: 0 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.411);
+    }
+}
+
+.nav {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    &_links {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        padding: 8px 10px;
+        color: #ffffff;
+        .nav_icons {
+            font-size: 2.1rem;
+            color: rgba(52, 52, 238, 0.986);
+            background-color: var(--dark);
+            padding: 6px;
+            border-radius: 7px;
+        }
+        .nav_title {
+            font-size: 1.3rem;
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .nav_title:hover {
+            color: rgba(255, 255, 255);
+        }
+    }
+    &_links:hover {
+        background-color: var(--dark);
+    }
+}
