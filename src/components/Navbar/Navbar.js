@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './Navbar.scss';
 import  {FiSearch}  from 'react-icons/fi';
 
+
 const Navbar = () => {
+    const [search, setSearch] = useState('');
+    console.log(search);
+
   return (
     <div className='navbar navbar'>
         <Container>
@@ -16,7 +20,11 @@ const Navbar = () => {
                 <Col sm="12" md="5" lg="6" xl="7">
                     <div className='navbar_search'>
                         <FiSearch  className='search_icon'/>
-                        <input type="text" placeholder='search'/>
+                        <input 
+                            type="text" 
+                            placeholder='search'
+                            onChange={(e) => setSearch(e.target.value)}
+                        />
                     </div>
                 </Col>
                 <Col sm="12" md="2" lg="2" xl="2">

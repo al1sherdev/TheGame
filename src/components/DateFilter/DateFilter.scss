@@ -1,7 +1,8 @@
 .date_filter {
-    width: 40%;
+    width: 50%;
     height: 40px;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: flex-end;
     color: #ffffff;
     input {
@@ -16,5 +17,35 @@
         padding: 4px;
         border-radius: 7px;
         color: #ffffff;
+    }
+}
+@media (max-width: 1060px) {
+    .date_filter {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        input {
+            width: 40%;
+        }
+    }
+}
+@media (max-width: 738px) {
+    .date_filter {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        input {
+            width: 30%;
+        }
+    }
+}
+@media (max-width: 550px) {
+    .date_filter {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        input {
+            width: 20%;
+        }
     }
 }

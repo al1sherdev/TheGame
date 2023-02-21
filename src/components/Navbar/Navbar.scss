@@ -42,3 +42,10 @@
         color: #ffffff;
     }
 }
+@media screen and (max-width: 768px) {
+    .navbar_wrap {
+        width: 90%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}

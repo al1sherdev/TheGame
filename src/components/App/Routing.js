@@ -15,6 +15,7 @@ import Platforms from "../../pages/Platforms";
 function App() {
   return (
     <div className="app">
+      Hello GitHub
         <BrowserRouter>
         <Navbar />
         <Sidebar />
